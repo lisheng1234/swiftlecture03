@@ -13,6 +13,7 @@ class ViewController: UIViewController {
   
     @IBOutlet weak var lbName: UILabel!
   
+    @IBOutlet weak var touchView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,23 @@ class ViewController: UIViewController {
         let button = sender as!UIButton
         button.setTitle("OK", for: UIControl.State.normal)
     }
-   
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("touchesBegan")
+        if let touch = touches.first{
+            let loc = touch.location(in: self.touchView)
+            print("\(loc)")
+            if(self.touchView.bounds.contains(loc)){
+                self.touchView.backgroundColor = UIColor.red
+            }else{
+                self.touchView.backgroundColor = UIColor.green
+            }
+        }
+        
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("touchesEnded")
+    }
     
 }
 

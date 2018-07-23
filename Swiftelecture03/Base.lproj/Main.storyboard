@@ -31,13 +31,18 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jll-vy-gjh"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="YES"/>
                                 <connections>
                                     <action selector="btnConf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CAT-g5-XR3"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-tD-HbO">
+                                <rect key="frame" x="67" y="108" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34134685100000001" green="0.66372925679999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ofy-sA-L9o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Vj-D9-NLL"/>
                             <constraint firstItem="VbU-Zc-IBe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3mP-Gm-ZZe"/>
@@ -50,6 +55,7 @@
                     </view>
                     <connections>
                         <outlet property="lbName" destination="VbU-Zc-IBe" id="IOJ-mo-9zq"/>
+                        <outlet property="touchView" destination="dJw-tD-HbO" id="Oq8-va-gV2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
