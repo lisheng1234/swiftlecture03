@@ -36,11 +36,27 @@
                                     <action selector="btnConf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CAT-g5-XR3"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-tD-HbO">
-                                <rect key="frame" x="67" y="108" width="240" height="128"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hsx-Ir-Bx9">
+                                <rect key="frame" x="16" y="87" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34134685100000001" green="0.66372925679999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Fk0-80-aib"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aJC-ar-uJa">
+                                <rect key="frame" x="25" y="208" width="313" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sendervalue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Afe-XO-wMR"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZWA-YS-9mO">
+                                <rect key="frame" x="242" y="260" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperchanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="815-ly-RBC"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -55,7 +71,9 @@
                     </view>
                     <connections>
                         <outlet property="lbName" destination="VbU-Zc-IBe" id="IOJ-mo-9zq"/>
-                        <outlet property="touchView" destination="dJw-tD-HbO" id="Oq8-va-gV2"/>
+                        <outlet property="sliderstatus" destination="aJC-ar-uJa" id="CMY-ps-n88"/>
+                        <outlet property="stepperstatus" destination="ZWA-YS-9mO" id="Ztp-36-4fK"/>
+                        <outlet property="switchstatus" destination="hsx-Ir-Bx9" id="7az-rU-DH0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
