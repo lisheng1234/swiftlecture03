@@ -50,7 +50,7 @@
                                     <action selector="sendervalue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Afe-XO-wMR"/>
                                 </connections>
                             </slider>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ZWA-YS-9mO">
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZWA-YS-9mO">
                                 <rect key="frame" x="242" y="260" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>

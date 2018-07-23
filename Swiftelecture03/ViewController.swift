@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         lbName.text = "欢迎光临"
         sliderstatus.value = 0.0
-        
+        stepperstatus.value = 0
     }
 
 
@@ -57,6 +57,7 @@ class ViewController: UIViewController {
  
     @IBAction func sendervalue(_ sender: Any) {
         print("\(sliderstatus.value)")
+        stepperstatus.value = Double(sliderstatus.value)
     }
     @IBAction func stepperchanged(_ sender: Any) {
         print("\(stepperstatus.value)")
