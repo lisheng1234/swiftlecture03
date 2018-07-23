@@ -12,17 +12,23 @@ class ViewController: UIViewController {
 
   
     @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var btnConfirm: UIButton!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        lbName.text = "欢迎光临"
     }
 
 
-    @IBAction func btnConfirmClicked(_ sender: Any) {
-        lbName.text="LISHENG你好"
+    @IBAction func btnConf(_ sender: Any) {
+        
+         lbName.text="李胜你好"
+        
+        let button = sender as!UIButton
+        button.setTitle("OK", for: UIControl.State.normal)
     }
+   
     
 }
 
